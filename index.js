@@ -204,8 +204,6 @@ Using the feet function below do the following:
 function feet(cm){
     return cm / 30.48;
 }
- 
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -217,10 +215,11 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
-  }
+function annoyingSong(number){
+    return "${number} bottles of soda on the wall, ${number} bottles of soda, take one down pass it around ${number-1} bottles of soda on the wall";
+}
 
+console.log(annoyingSong(10));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -237,11 +236,19 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(grade){
+  if (grade >= 90 && grade <= 100) {
+    return "you got an A"
+  } else if (grade >= 80 && grade <= 89) {
+    return "you got a B"
+  } else if (grade >= 70 && grade <= 79) {
+    return "you got a C"
+  } else if (grade >= 60 && grade <= 69) {
+    return "you got a D"
+  } else if (grade < 60) {
+    return "you got an F"
   }
-  
-  
+}
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
