@@ -166,11 +166,19 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+// 0 = rock 1 = paper 2 = scissors
+
 function game(user, computer){
-    /*add your code here*/
+  if ((user == "rock" && computer == "scissors") || (user == "paper" && computer == "rock") || (user == "scissors" && computer == "paper")) {
+    return "you win!";
+  } else if (user == computer) {
+    return "it's a tie";
+  } else {
+    return "you lose!";
+  }
 }
   
-  
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
